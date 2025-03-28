@@ -1,0 +1,72 @@
+.fc-day-today {
+  background-color: transparent !important;
+}
+
+.fc-day-today .day-header {
+  color: #28ad5e;
+  font-weight: bold;
+}
+
+.fc-day-today .day-number {
+  background-color: #28ad5e;
+  color: black;
+  border-radius: 50%;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  margin-top: 4px;
+}
+
+.day-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+}
+
+.day-header > div:first-child {
+  margin-bottom: 4px;
+}
+
+.cursor-context-menu {
+  width: 100% !important;
+  height: 100% !important;
+  display: flex;
+  border-radius: 2.5%;
+  padding: 0.2rem;
+  
+  
+}
+
+.fc-timegrid-slot {
+  height: 0.5rem !important;
+}
+
+.fc-timegrid-slot-minor {
+  border: none !important;
+}
+
+.fc-timegrid-axis {
+  border: none !important;
+}
+
+.fc-scrollgrid-shrink-cushion {
+  font-size: 1rem !important;
+}
+
+.fc-timegrid-slot-lane {
+  height: 0.5rem !important;
+}
+
+.fc-button{
+  background-color: black !important;
+}
+
+.fc-event {
+  background-color: unset !important;
+  border: none !important;
+  color: unset !important;
+}

@@ -1,0 +1,122 @@
+/* Hauptcontainer */
+.nestmind {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Chat-Box */
+.chat-box {
+  height: 65vh;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  padding: 0px;
+  background-color: #f8f9fa;
+}
+
+/* Nutzer- und Bot-Nachrichten */
+.user {
+  text-align: right;
+  font-weight: bold;
+  color: #007bff;
+  /* Bootstrap Blau */
+}
+
+.bot {
+  text-align: left;
+  font-weight: bold;
+  color: #28a745;
+  /* Bootstrap Grün */
+}
+
+/* Input-Feld */
+.input-box {
+  display: flex;
+  gap: 10px;
+}
+
+/* Ladeanimation */
+@keyframes dots {
+  0% {
+    content: ".";
+  }
+
+  33% {
+    content: "..";
+  }
+
+  66% {
+    content: "...";
+  }
+}
+
+.loading-text .dots::after {
+  display: inline-block;
+  animation: dots 1.5s infinite steps(1);
+  content: "...";
+}
+
+.chat-box-container {
+  width: 1000px;
+  /* Fixe Breite auf größeren Screens */
+  max-width: 90%;
+  /* Damit es auf kleinen Screens nicht zu breit ist */
+}
+
+.chat-box-container-1 {
+  width: 750px;
+  /* Fixe Breite auf größeren Screens */
+  max-width: 90%;
+  /* Damit es auf kleinen Screens nicht zu breit ist */
+}
+
+.chat-box-container-2 {
+  width: 400px;
+  /* Fixe Breite auf größeren Screens */
+  max-width: 90%;
+  /* Damit es auf kleinen Screens nicht zu breit ist */
+}
+
+.chat-box {
+  height: 400px;
+  /* Fixe Höhe, egal wie viele Nachrichten */
+  overflow-y: auto;
+  /* Scrollbar, wenn zu viele Nachrichten */
+  display: flex;
+  flex-direction: column;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0.3;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0.3;
+  }
+}
+
+.loading-text .dots::after {
+  content: "...";
+  animation: blink 1.5s infinite;
+}
+
+
+.message {
+  display: inline-block;
+  border-radius: 10px;
+  margin: 10px 20px;
+}
+
+.message.user {
+  text-align: right;
+}
+
+.message.bot {
+  text-align: left;
+}
